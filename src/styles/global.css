@@ -1,4 +1,7 @@
-
+:root {
+    --bg-gray: #171717;
+    --main-orange: #e6533d;
+}
 
 * {
     padding: 0;
