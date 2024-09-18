@@ -27,11 +27,11 @@ function App() {
   
   // const [count, setCount] = useState(0)
 
-  return    
-   
+  return (
+    <>
       <Activity exercise="walk" />
-  
-  
+    </>
+  )
 }
 
 export default App
