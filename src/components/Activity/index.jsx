@@ -48,7 +48,12 @@ export function Activity({exercise}) {
 
   const options = {
     chart: {
-      type: 'line'
+      type: 'line',
+      sparkline: {
+        enabled: true,
+      },
+      width: 300,
+      height: 100
     },
     xaxis: {
       type: 'numeric',
@@ -83,8 +88,6 @@ export function Activity({exercise}) {
         <Chart
           options={options}
           series={series}
-          width="500"
-          height="200"
         />
         <button>+</button>
       </div>
