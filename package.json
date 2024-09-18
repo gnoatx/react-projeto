@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
+    "apexcharts": "^3.53.0",
     "axios": "^1.7.7",
-    "chart.js": "^4.4.4",
+    "fitness-tracker": "file:",
     "react": "^18.3.1",
-    "react-chartjs-2": "^5.2.0",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "strava-v3": "^2.2.1"
