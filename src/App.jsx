@@ -1,6 +1,7 @@
 import './styles/global.css'
 import styles from './styles/App.module.css'
 import { Activity } from "./components/Activity"
+import ActivityHistory from './components/Activity/historico'
 
 // import strava from 'strava-v3'
 
@@ -57,7 +58,15 @@ function App() {
         <Activity exercise="run" data={runData} />
         <Activity exercise="weightlifting" data={weightliftingData} />
       </div>
+
       <div className={styles.background}></div>
+      <div className="App">
+
+
+      </div>
+      <h1 className={styles.title}>Histórico de Atividades</h1>
+      <ActivityHistory duration="45 min" distance={10} calories={300} />
+      <ActivityHistory duration="30 min" distance={5} calories={200} />
     </>
   )
 }
