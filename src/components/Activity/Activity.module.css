@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 580px;
+    border: 1px solid var(--line-gray);
+    border-radius: var(--global-radius);
+    padding: 20px;
+
+    background: #ffffff08;
+    backdrop-filter: blur(8px);
+}
+
+.exerciseName {
+    color: var(--text-white);
+    font-size: 1.2rem;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--bg-gray);
+    padding: 5px;
+    border-radius: var(--global-radius);
+
+    color: var(--main-orange);
+    font-size: 48px;
+    font-weight: 700;
+
+    aspect-ratio: 1/1;
+}
