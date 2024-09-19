@@ -1,6 +1,9 @@
 :root {
     --bg-gray: #171717;
+    --line-gray: #252525;
     --main-orange: #e6533d;
+    --text-white: #f8f8f8;
+    --global-radius: 24px;
 }
 
 * {
@@ -11,6 +14,10 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+body {
+    background-color: var(--bg-gray);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,7 +1,8 @@
 import { PersonSimple, PersonSimpleWalk, PersonSimpleRun, PersonSimpleBike, PersonSimpleSwim, Barbell, Volleyball } from "@phosphor-icons/react"
 import Chart from "react-apexcharts"
+import styles from './Activity.module.css'
 
-export function Activity({exercise}) {
+export function Activity({exercise, data}) {
   let color = "#e6533d"
   const exercises = {
     "person": {
@@ -51,19 +52,24 @@ export function Activity({exercise}) {
       type: 'line',
       sparkline: {
         enabled: true,
-      },
-      width: 300,
-      height: 100
+      }
+    },
+    tooltip: {
+      enabled: false
     },
     xaxis: {
       type: 'numeric',
       categories: daysOfMonth
     },
+    yaxis: {
+      seriesName: 'Minutos praticados'
+    },
     stroke: {
       show: true,
       curve: 'smooth',
       colors: color,
-      lineCap: 'round'
+      lineCap: 'round',
+      width: 4
     },
     markers: {
       size: 0
@@ -76,20 +82,17 @@ export function Activity({exercise}) {
     }
   }
 
-  const series = [{
-    name: 'Minutos praticados',
-    data: [1, 5, 10, 15, 0, 27, 38, 0, 1, 49, 2]
-  }]
-
   return (
-      <div>
+      <div className={styles.card}>
         {currentExercise.icon}
-        <span>{currentExercise.name}</span>
+        <span className={styles.exerciseName}>{currentExercise.name}</span>
         <Chart
+          width="300px"
+          height="100px"
           options={options}
-          series={series}
+          series={data}
         />
-        <button>+</button>
+        <button className={styles.add}>+</button>
       </div>
   )
 }
