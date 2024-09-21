@@ -1,0 +1,44 @@
+.home{
+    margin: 0;
+    padding: 10px;
+    background-color: #e2d4d4;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.title {
+    color: var(--text-white);
+}
+
+.stepContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.stepNav {
+    display: flex;
+    gap: 40px;
+}
+
+.stepButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--global-radius);
+
+    background-color: var(--main-orange);
+}
+
+.stepContainer1 {
+    background-color: red;
+}

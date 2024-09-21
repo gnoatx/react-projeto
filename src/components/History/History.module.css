@@ -1,11 +1,14 @@
+
 .geral{
 
     display: flex;
     align-items: center;
-    margin: 20px 0;
     padding: 20px;
+    width: 580px;
+        border: 1px solid var(--line-gray);
+        border-radius: var(--global-radius);
 background: #ffffff08;
-  
+    backdrop-filter: blur(8px);
 }
 .icon{
    font-size: 40px;

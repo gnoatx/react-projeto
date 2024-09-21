@@ -1,39 +1,10 @@
-import { PersonSimple, PersonSimpleWalk, PersonSimpleRun, PersonSimpleBike, PersonSimpleSwim, Barbell, Volleyball } from "@phosphor-icons/react"
+import { Plus } from "@phosphor-icons/react"
 import Chart from "react-apexcharts"
 import styles from './Activity.module.css'
+import { color, exercises } from "../../assets/exercises.jsx"
+
 
 export function Activity({exercise, data}) {
-  let color = "#e6533d"
-  const exercises = {
-    "person": {
-      name: "Inativo",
-      icon: <PersonSimple size={48} color={color} />
-    },
-    "walk": {
-      name: "Caminhada",
-      icon: <PersonSimpleWalk size={48} color={color} />
-    },
-    "run": {
-      name: "Corrida",
-      icon: <PersonSimpleRun size={48} color={color} />
-    },
-    "bike": {
-      name: "Ciclismo",
-      icon: <PersonSimpleBike size={48} color={color} />
-    },
-    "swim": {
-      name: "Natação",
-      icon: <PersonSimpleSwim size={48} color={color} />
-    },
-    "weightlifting": {
-      name: "Levantamento",
-      icon: <Barbell size={48} color={color} />
-    },
-    "volleyball": {
-      name: "Vôlei",
-      icon: <Volleyball size={48} color={color} />
-    }
-  }
 
   const currentExercise = exercises[exercise] || exercises.person
 
@@ -92,7 +63,8 @@ export function Activity({exercise, data}) {
           options={options}
           series={data}
         />
-        <button className={styles.add}>+</button>
+        <button className={styles.add}><Plus size={32} weight="bold" /></button>
       </div>
   )
 }
+
