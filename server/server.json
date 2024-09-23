@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Squat",
+      "description": "Bend your knees and push your hips back, keeping your chest up.",
+      "repetitions": 15,
+      "type": "Strength",
+      "category": "Lower Body"
+    },
+    {
+      "id": 2,
+      "name": "Push-Up",
+      "description": "Lie face down, lift your body with your hands, keeping the body straight.",
+      "repetitions": 12,
+      "type": "Strength",
+      "category": "Upper Body"
+    },
+    {
+      "id": 3,
+      "name": "Plank",
+      "description": "Hold a straight body position in a push-up stance, supported by your forearms.",
+      "repetitions": "30 seconds",
+      "type": "Endurance",
+      "category": "Core"
+    },
+    {
+      "id": 4,
+      "name": "Lunge",
+      "description": "Step forward and bend your knee until it forms a 90-degree angle.",
+      "repetitions": 10,
+      "type": "Strength",
+      "category": "Lower Body"
+    },
+    {
+      "id": 5,
+      "name": "Lateral Raise",
+      "description": "Lift your arms sideways to shoulder height.",
+      "repetitions": 12,
+      "type": "Strength",
+      "category": "Upper Body"
+    },
+    {
+      "id": 6,
+      "name": "Crunch",
+      "description": "Lie on your back, lift your torso toward your knees.",
+      "repetitions": 20,
+      "type": "Endurance",
+      "category": "Core"
+    },
+    {
+      "id": 7,
+      "name": "Burpee",
+      "description": "From a squat position, jump, fall into a push-up, and return to starting position.",
+      "repetitions": 10,
+      "type": "Cardio",
+      "category": "Full Body"
+    },
+    {
+      "id": 8,
+      "name": "Running in Place",
+      "description": "Run in place, lifting your knees toward your chest.",
+      "repetitions": "1 minute",
+      "type": "Cardio",
+      "category": "Cardio"
+    },
+    {
+      "id": 9,
+      "name": "Bicep Curl",
+      "description": "Bend your arms, bringing weights toward your shoulders.",
+      "repetitions": 15,
+      "type": "Strength",
+      "category": "Upper Body"
+    },
+    {
+      "id": 10,
+      "name": "Bridge",
+      "description": "Lie on your back, lift your hips toward the ceiling.",
+      "repetitions": 15,
+      "type": "Strength",
+      "category": "Core"
+    },
+    {
+      "id": 11,
+      "name": "Jumping Jack",
+      "description": "Jump and spread your legs and arms simultaneously.",
+      "repetitions": "30 seconds",
+      "type": "Cardio",
+      "category": "Cardio"
+    },
+    {
+      "id": 12,
+      "name": "Bent-Over Row",
+      "description": "Lean slightly forward and pull weights toward your chest.",
+      "repetitions": 12,
+      "type": "Strength",
+      "category": "Upper Body"
+    },
+    {
+      "id": 13,
+      "name": "Mountain Climber",
+      "description": "In a plank position, alternate bringing your knees toward your chest.",
+      "repetitions": "1 minute",
+      "type": "Cardio",
+      "category": "Core"
+    },
+    {
+      "id": 14,
+      "name": "Deadlift",
+      "description": "Lift a weight from the ground with a straight back and slightly bent knees.",
+      "repetitions": 12,
+      "type": "Strength",
+      "category": "Lower Body"
+    },
+    {
+      "id": 15,
+      "name": "Pull-Up",
+      "description": "Pull a bar or weight toward your chest.",
+      "repetitions": 10,
+      "type": "Strength",
+      "category": "Upper Body"
+    },
+    {
+      "id": 16,
+      "name": "Step-Up",
+      "description": "Step onto a box or step, alternating legs.",
+      "repetitions": 15,
+      "type": "Strength",
+      "category": "Lower Body"
+    },
+    {
+      "id": 17,
+      "name": "Jump Rope",
+      "description": "Jump over a moving rope continuously.",
+      "repetitions": "1 minute",
+      "type": "Cardio",
+      "category": "Cardio"
+    },
+    {
+      "id": 18,
+      "name": "Calf Raise",
+      "description": "Stand on your toes and slowly lower back down.",
+      "repetitions": 20,
+      "type": "Strength",
+      "category": "Lower Body"
+    },
+    {
+      "id": 19,
+      "name": "Superman",
+      "description": "Lie face down, lift your arms and legs simultaneously.",
+      "repetitions": 12,
+      "type": "Endurance",
+      "category": "Core"
+    },
+    {
+      "id": 20,
+      "name": "Front Raise",
+      "description": "Lift your arms in front of you to shoulder height.",
+      "repetitions": 12,
+      "type": "Strength",
+      "category": "Upper Body"
+    }
+  ]
+}
