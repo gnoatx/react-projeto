@@ -4,6 +4,7 @@ import style from './Favourite.module.css'
 export function Favourite() {
   return (
     <div>
+      <button onClick={() => localStorage.clear()}>Limpar localStorage</button>
       <ul className={style.list}>
         <li><FavCard exercise="walk" /></li>
         <li><FavCard exercise="run" /></li>

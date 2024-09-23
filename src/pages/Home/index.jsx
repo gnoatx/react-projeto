@@ -79,7 +79,7 @@ export function Home() {
           <button className={styles.stepButton} onClick={handleNextStep}><CaretRight size={32} weight="bold" color={bgColor} /></button>
         </div>
       </div>
-     <ActivityFitness/>
+     {/* <ActivityFitness/> */}
      {/* <ExerciseTracker/> */}
 
     </>
