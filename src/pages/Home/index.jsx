@@ -5,10 +5,9 @@ import { ActivityHistory } from '../../components/History'
 import { Calendar } from '../../components/Calendar'
 import { CaretLeft, CaretRight } from "@phosphor-icons/react"
 import {ActivityFitness} from '../../components/SaveActivity/ActivityFitness'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export function Home() {
-  const color = "#e6533d"
   const bgColor ="#171717"
 
   const walkData = [{
