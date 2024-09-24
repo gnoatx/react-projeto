@@ -10,6 +10,8 @@ import { useState } from 'react'
 export function Home() {
   const bgColor ="#171717"
 
+  const favoriteExercises = JSON.parse(localStorage.getItem("favorites")) || []
+
   const walkData = [{
     data: [12, 45, 78, 3, 90, 56, 23, 115, 67, 34, 87, 6, 102, 39, 75, 19, 54, 110, 28, 81, 49, 92, 37, 8, 64, 99, 22, 48, 70]
   }]

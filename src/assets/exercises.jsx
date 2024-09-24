@@ -50,11 +50,6 @@ export const exercises = {
 
   export const exercises2 = [
     {
-      id: "person",
-      name: "Inativo",
-      icon: <PersonSimple size={48} color={color} />
-    },
-    {
       id: "walk",
       name: "Caminhada",
       icon: <PersonSimpleWalk size={48} color={color} />

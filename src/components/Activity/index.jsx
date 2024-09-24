@@ -1,12 +1,12 @@
 import { Plus } from "@phosphor-icons/react"
 import Chart from "react-apexcharts"
 import styles from './Activity.module.css'
-import { color, exercises } from "../../assets/exercises.jsx"
+import { color, exercises2 } from "../../assets/exercises.jsx"
 
 
 export function Activity({exercise, data}) {
 
-  const currentExercise = exercises[exercise] || exercises.person
+  const currentExercise = exercises2.find(e => e.id === exercise) || exercises2.person
 
   const lastDayOfMonth = new Date(
     new Date().getFullYear(),
