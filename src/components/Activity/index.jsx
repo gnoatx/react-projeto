@@ -6,7 +6,6 @@ import { color, exercises2 } from "../../assets/exercises.jsx"
 
 export function Activity({exercise, data}) {
 
-  const currentExercise = exercises2.find(e => e.id === exercise) || exercises2.person
 
   const lastDayOfMonth = new Date(
     new Date().getFullYear(),
@@ -55,8 +54,8 @@ export function Activity({exercise, data}) {
 
   return (
       <div className={styles.card}>
-        {currentExercise.icon}
-        <span className={styles.exerciseName}>{currentExercise.name}</span>
+        {exercise.icon}
+        <span className={styles.exerciseName}>{exercise.name}</span>
         <Chart
           width="300px"
           height="100px"
