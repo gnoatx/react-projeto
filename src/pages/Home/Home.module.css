@@ -42,3 +42,10 @@
 .stepContainer1 {
     background-color: red;
 }
+
+.options {
+    position: absolute;
+    color: var(--main-orange);
+    top: 10px;
+    right: 10px;
+}

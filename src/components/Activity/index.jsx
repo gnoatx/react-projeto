@@ -4,8 +4,9 @@ import styles from './Activity.module.css'
 import { color, exercises2 } from "../../assets/exercises.jsx"
 
 
-export function Activity({exercise, data}) {
+export function Activity({id, data}) {
 
+  const exercise = exercises2.find((e) => e.id === id)
 
   const lastDayOfMonth = new Date(
     new Date().getFullYear(),

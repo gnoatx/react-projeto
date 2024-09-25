@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FavCard } from "../../components/FavCard";
 import style from "./Favourite.module.css";
 import { exercises2 } from "../../assets/exercises";
+import { CaretLeft } from "@phosphor-icons/react"
 
 export function Favourite() {
   const [favorites, setFavorites] = useState(
@@ -35,6 +36,7 @@ export function Favourite() {
 
   return (
     <div>
+      <a href="/" className={style.back}><CaretLeft size={48}/></a>
       <ul className={style.list}>
         {exercises2.map((exercise) => (
           <li key={exercise.id}>

@@ -14,17 +14,35 @@ export function Home() {
 
   const chartData = {
     "walk": [{
-      data: [12, 45, 78, 3, 90, 56, 23, 115, 67, 34, 87, 6, 102, 39, 75, 19, 54, 110, 28, 81, 49, 92, 37, 8, 64, 99, 22, 48, 70]
-    }],
-    "bike": [{
-      data: [5, 73, 14, 92, 38, 61, 27, 88, 41, 110, 8, 54, 33, 97, 20, 79, 66, 12, 47, 115, 30, 85, 9, 99, 25, 77, 68, 100, 3]
-    }],
-    "weightlifting": [{
-    data: [0, 0, 3, 0, 25, 0, 47, 0, 56, 10, 0, 12, 0, 75, 0, 88, 0, 99, 20, 0, 33, 0, 40, 0, 62, 0, 8, 0, 57]
+        "data": [0, 30, 15, 60, 22, 0, 35, 40, 10, 55, 0, 70, 25, 0, 12, 0, 45, 15, 0, 80, 18, 53, 20, 0, 7, 0, 40, 33, 5]
     }],
     "run": [{
-      data: [29, 86, 14, 72, 40, 95, 23, 11, 67, 54, 90, 36, 100, 5, 82, 43, 61, 7, 116, 26, 74, 32, 58, 99, 21, 48, 13, 89, 39]
+        "data": [20, 0, 12, 45, 0, 50, 5, 0, 10, 40, 25, 55, 0, 62, 30, 70, 15, 0, 0, 75, 5, 50, 14, 90, 0, 35, 29, 60, 8]
     }],
+    "bike": [{
+        "data": [0, 0, 20, 0, 15, 40, 30, 70, 0, 90, 10, 45, 25, 60, 35, 0, 5, 55, 0, 80, 22, 0, 15, 67, 0, 40, 33, 75, 10]
+    }],
+    "swim": [{
+        "data": [0, 30, 20, 0, 25, 35, 0, 60, 10, 0, 5, 55, 0, 70, 15, 0, 40, 0, 18, 90, 0, 65, 8, 70, 0, 15, 10, 0, 5]
+    }],
+    "weightlifting": [{
+        "data": [30, 0, 0, 60, 20, 35, 0, 50, 10, 70, 0, 55, 0, 80, 0, 0, 5, 90, 18, 0, 25, 75, 10, 0, 12, 0, 0, 60, 8]
+    }],
+    "volleyball": [{
+        "data": [15, 40, 0, 0, 30, 0, 20, 60, 10, 45, 5, 75, 18, 0, 12, 80, 0, 0, 15, 90, 0, 55, 0, 70, 28, 0, 10, 0, 3]
+    }],
+    "baseball": [{
+        "data": [10, 0, 20, 55, 30, 0, 15, 60, 5, 0, 25, 0, 20, 45, 10, 70, 30, 0, 12, 75, 8, 90, 22, 55, 0, 0, 18, 40, 7]
+    }],
+    "basketball": [{
+        "data": [0, 50, 15, 40, 30, 0, 10, 60, 25, 0, 12, 70, 8, 0, 0, 55, 22, 0, 10, 0, 5, 75, 30, 85, 15, 40, 0, 100, 3]
+    }],
+    "boxing": [{
+        "data": [25, 55, 20, 30, 0, 45, 10, 60, 5, 90, 0, 0, 35, 50, 0, 70, 12, 0, 18, 65, 20, 80, 15, 0, 0, 85, 2, 0, 6]
+    }],
+    "soccer": [{
+        "data": [30, 0, 20, 60, 0, 55, 10, 70, 0, 80, 5, 0, 12, 90, 0, 50, 22, 0, 8, 75, 10, 85, 3, 55, 30, 40, 0, 70, 4]
+    }]
   }
 
   const [step, setStep] = useState(1)
@@ -49,23 +67,14 @@ export function Home() {
     <>
       <div className={styles.container}>
         <h1 className={styles.title}>Fitness Tracker</h1>
-        <a href="/favs"><GearSix size={32} /></a>
+        <a href="/favs" className={styles.options}><GearSix size={48} /></a>
 
         {step === 1 && (
           <div className={styles.stepContainer}>
             <h1 className={styles.title}>Exercícios</h1>
-            {/* <Activity exercise="walk" data={walkData} />
-            <Activity exercise="bike" data={bikeData} />
-            <Activity exercise="run" data={runData} />
-            <Activity exercise="weightlifting" data={weightliftingData} /> */}
-            <ul>
               {favoriteExercises.map((ex) => (
-                <li key={ex.id}>
-                  <Activity exercise={ex} data={chartData[ex.id]} />
-                </li>
+                  <Activity id={ex.id} data={chartData[ex.id]} key={ex.id} />
               ))}
-
-            </ul>
           </div>
         )}
 
