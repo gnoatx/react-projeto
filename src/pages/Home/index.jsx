@@ -6,6 +6,7 @@ import { Calendar } from '../../components/Calendar'
 import { CaretLeft, CaretRight, GearSix } from "@phosphor-icons/react"
 import {ActivityFitness} from '../../components/SaveActivity/ActivityFitness'
 import { useState } from 'react'
+import { Link } from "react-router-dom"
 
 export function Home() {
   const bgColor ="#171717"
@@ -67,7 +68,7 @@ export function Home() {
     <>
       <div className={styles.container}>
         <h1 className={styles.title}>Fitness Tracker</h1>
-        <a href="/favs" className={styles.options}><GearSix size={48} /></a>
+        <Link to="/favs" className={styles.options}><GearSix size={48} /></Link>
 
         {step === 1 && (
           <div className={styles.stepContainer}>
